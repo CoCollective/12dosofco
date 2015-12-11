@@ -2,7 +2,7 @@
   "name": "holiday-card",
   "version": "1.0.0",
   "authors": [
-    "Tommy Dunn"
+    "Tommy Dunn <tdunn@doable.com>"
   ],
   "dependencies": {
     "gulp": "^3.8.11",
