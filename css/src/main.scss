@@ -38,7 +38,7 @@
      transform: translate(0, -100%);
 
      &:nth-child(1){
-         left: 3%;
+         left: 8%;
          top: -1em;
          background: transparent;
        @include animation(from-top 2s 0s ease-out forwards);
@@ -145,7 +145,7 @@ h2 {
     .copyblock {
       font-family: 'Source Sans Pro', sans-serif;
       text-align: center;
-          padding: 0px 250px 0px 250px;
+          margin: auto;
           color: #5D5D5D;
           font-size: 30px;
     }
