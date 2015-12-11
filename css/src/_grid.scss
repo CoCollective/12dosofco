@@ -34,12 +34,23 @@
 
 
 /* media querys */
+@media screen and (max-width: 3000px) {
+	.cbp-rfgrid li {
+    height:auto;
+		width: 20%; /* Fallback */
+		width: -webkit-calc(100% / 8);
+		width: calc(100% / 8);
+		img {
+			height:auto;
+		}
+	}
+}
 @media screen and (max-width: 1500px) {
 	.cbp-rfgrid li {
     height:auto;
 		width: 20%; /* Fallback */
-		width: -webkit-calc(100% / 6);
-		width: calc(100% / 6);
+		width: -webkit-calc(100% / 8);
+		width: calc(100% / 8);
 		img {
 			height:auto;
 		}
@@ -49,8 +60,8 @@
 	.cbp-rfgrid li {
     height:auto;
 		width: 20%; /* Fallback */
-		width: -webkit-calc(100% / 6);
-		width: calc(100% / 6);
+		width: -webkit-calc(100% / 8);
+		width: calc(100% / 8);
 		img {
 			height:auto;
 		}
@@ -60,8 +71,8 @@
 	.cbp-rfgrid li {
     height:auto;
 		width: 20%; /* Fallback */
-		width: -webkit-calc(100% / 6);
-		width: calc(100% / 5);
+		width: -webkit-calc(100% / 8);
+		width: calc(100% / 8);
     img {
       height:auto;
     }
