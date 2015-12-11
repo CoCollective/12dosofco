@@ -125,8 +125,8 @@
 	.cbp-rfgrid li {
     height:250px;
 		width: 25%; /* Fallback */
-		width: -webkit-calc(100% / 4);
-		width: calc(100% / 4);
+		width: -webkit-calc(100% / 3);
+		width: calc(100% / 3);
 	}
 }
 @media screen and (max-width: 850px) {

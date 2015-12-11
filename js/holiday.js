@@ -12,15 +12,7 @@ var holiday = (function(){
 
 		items: function(){
 			$('.grid .item').on('click', function(){
-
-				// $('.hero img').removeClass('active');
-				// $('.hero img').eq($(this).index() + 1).addClass('active');
-				//
-				// $('.hero .ribbon').text($(this).data('title'));
-				//
-				// $('html, body').animate({
-				//       scrollTop: $('.hero').offset().top
-				// }, 200);
+        $(this).addClass('active');
 
 			});
 
