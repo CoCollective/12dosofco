@@ -164,9 +164,7 @@
 		width: -webkit-calc(100% / 1);
 		width: calc(100% / 1);
 	}
-	img {
-		width: 100% !important;
-	}
+
 	.ornaments {
 	  position: absolute;
 	  top: 0;
@@ -211,7 +209,29 @@
 	     }
 	   }
 	}
-	.footer-grid {padding:30px 0 !important;}
+	.footer-header {
+		img {
+			width: 80%;
+		}
+	}
+	.footer-grid {
+		padding:30px 0 !important;
+		.left {
+			img {
+			height: 20px;
+			}
+		}
+		.center {
+			img {
+			height: 20px;
+			}
+		}
+		.right {
+			img {
+			height: 20px;
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 300px) {
