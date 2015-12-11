@@ -16,43 +16,24 @@
 	width: calc(100% / 6);
   img {
     height:auto;
-    width:250px;
+    //width:250px;
   }
 }
 
-.cbp-rfgrid li a,
-.cbp-rfgrid li a img {
+.cbp-rfgrid li,
+.cbp-rfgrid li  img {
 	display: block;
 	width: 100%;
 	cursor: pointer;
 }
 
-.cbp-rfgrid li a img {
+.cbp-rfgrid li  img {
 	max-width: 100%;
 }
 
-/* Flexbox is used for centering the heading */
-.cbp-rfgrid li a div {
-	position: absolute;
-	left: 20px;
-	top: 20px;
-	right: 20px;
-	bottom: 20px;
-	background: rgba(71,163,218,0.2);
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: flex;
-	-webkit-align-items: center;
-	-moz-align-items: center;
-	-ms-align-items: center;
-    align-items: center;
-    text-align: center;
-    opacity: 0;
-}
 
 
-/* Example for media query: change number of items per row */
+/* media querys */
 @media screen and (max-width: 1300px) {
 	.cbp-rfgrid li {
     height:auto;
@@ -144,21 +125,18 @@
 		width: -webkit-calc(100% / 3);
 		width: calc(100% / 3);
 	}
-	.ornaments {
-	   div {
-			 left:-10%;
-		 }
-	 }
+
 }
 
+//@media screen and (max-width: 560px) {
+//	.cbp-rfgrid li {
+//		width: 33.3333333%; /* Fallback */
+//		width: -webkit-calc(100% / 2);
+//		width: calc(100% / 2);
+//	}
+//
+//}
 @media screen and (max-width: 560px) {
-	.cbp-rfgrid li {
-		width: 33.3333333%; /* Fallback */
-		width: -webkit-calc(100% / 2);
-		width: calc(100% / 2);
-	}
-}
-@media screen and (max-width: 400px) {
 	.cbp-rfgrid li {
 		width: 50%; /* Fallback */
 		width: -webkit-calc(100% / 1);
@@ -166,15 +144,7 @@
 	}
 
 	.ornaments {
-	  position: absolute;
-	  top: 0;
-	  left: 0;
-	  width: 100%;
 	   div {
-	     position: absolute;
-	     top: 0;
-	     left: 0;
-	     transform: translate(0, -100%);
 
 	     &:nth-child(1){
 	         display: none;
@@ -200,8 +170,8 @@
 	       display: none;
 	     }
 	     &:nth-child(6){
-	       left: 70% !important;
-	       top: -10em !important;
+	       left: 61% !important;
+	       top: -12em !important;
 	       @include animation(from-top 2s 1.5s ease-out forwards);
 	     }
 	     &:nth-child(7){
@@ -209,6 +179,16 @@
 	     }
 	   }
 	}
+	.gift-wrapper {
+		.hero {
+			 img {
+				     width: 95% !important;
+			 		}
+					.copyblock {
+						width: 100% !important;
+					}
+			 	}
+			 }
 	.footer-header {
 		img {
 			width: 80%;
