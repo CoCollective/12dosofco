@@ -40,6 +40,7 @@ var holiday = (function(){
 			});
 		}
     };
+    
 })();
 
 $(document).ready(function(){

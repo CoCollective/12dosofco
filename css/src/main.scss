@@ -17,10 +17,6 @@
 .staff {
   margin: 0 auto;
 }
-.swing {
-  @include animation(swing ease-in-out 5s infinite alternate);
-}
-
 @keyframes swing {
     0% { transform: rotate(3deg); }
     100% { transform: rotate(-3deg); }
@@ -29,7 +25,6 @@
 .ornaments {
   position: absolute;
   top: 0;
-  left: 0;
   width: 100%;
    div {
      position: absolute;
@@ -38,49 +33,56 @@
      transform: translate(0, -100%);
 
      &:nth-child(1){
-         left: 8%;
+         left: 27%;
          top: -1em;
          background: transparent;
        @include animation(from-top 2s 0s ease-out forwards);
      }
 
      &:nth-child(2){
-       left: 20%;
+       left: 33%;
        background: transparent;
         @include animation(from-top 2s .5s ease-out forwards);
      }
 
      &:nth-child(3){
-       left: 30%;
-       top: -11em;
+       left: 39%;
+       top: -5em;
        background: transparent;
        @include animation(from-top 2s 1s ease-out forwards);
      }
 
      &:nth-child(4){
-       left: 40%;
+       left: 43%;
+       background: transparent;
+       @include animation(from-top 2s 1.5s ease-out forwards);
+       img {
+         height: 400px;
+       }
+     }
+
+     &:nth-child(5){
+       left: 53%;
        top: -1em;
        background: transparent;
        @include animation(from-top 2s 1.5s ease-out forwards);
      }
-
-     &:nth-child(5){
-       left: 57%;
-       top: -10em;
+     &:nth-child(6){
+       left: 60%;
        background: transparent;
        @include animation(from-top 2s 1.5s ease-out forwards);
+       img {
+         height: 350px;
+       }
      }
-     &:nth-child(6){
-       left: 70%;
+     &:nth-child(7){
+       left: 69%;
        top: -4em;
        background: transparent;
        @include animation(from-top 2s 1.5s ease-out forwards);
      }
-     &:nth-child(7){
-       left: 80%;
-       top: -3em;
-       background: transparent;
-       @include animation(from-top 2s 1.5s ease-out forwards);
+     img {
+       height: 300px;
      }
    }
 }
@@ -88,7 +90,7 @@
 	background: none;
 	font-family: Androgyne;
 	background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'), url('http://www.wearewebstars.dk/codepen/img//s2.png'), url('http://www.wearewebstars.dk/codepen/img//s3.png');
-	height: 85%;
+	height: 65%;
 	left: 0;
 	position: absolute;
 	top: 0;
@@ -143,7 +145,7 @@ h2 {
 
 
 	.hero {
-		width: 100%;
+		width: 80%;
 		position: relative;
     margin: 0 auto;
     .copyblock {
@@ -151,7 +153,7 @@ h2 {
       text-align: center;
           margin: auto;
           color: #5D5D5D;
-          font-size: 30px;
+          font-size: 22px;
               width: 70%;
           .copyblack {color:black;}
         }
@@ -200,4 +202,45 @@ h2 {
 			clear: both;
 		}
 	}
+}
+.footer-grid{height:50px;padding:20px 0;display:inline-block;width: 55%;}
+footer {
+  padding: 0 0 50px 0;
+  text-align:center;
+  background-color: #23BCC1;
+  color: white;
+  .left {
+    float: left;
+    width:33%;
+    img {
+        height:25px;
+    }
+  }
+  .center {
+    float: left;
+    width:33%;
+    img {
+      height:25px;
+    }
+  }
+  .right {
+    float: left;
+    width:33%;
+    img {
+      height:25px;
+    }
+  }
+  a {
+    &:hover {
+      padding-top: 15px;
+      background: lighten(#f66, 10.5%);
+      border: 1px solid #ff9c9c;
+      padding-bottom: 3px;
+      padding-right: 10px;
+      padding-left: 10px;
+      -webkit-box-shadow: 0 10px 6px -6px #777;
+	   -moz-box-shadow: 0 10px 6px -6px #777;
+	        box-shadow: 0 10px 6px -6px #777;
+    }
+  }
 }
