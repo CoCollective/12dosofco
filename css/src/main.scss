@@ -17,6 +17,15 @@
 .staff {
   margin: 0 auto;
 }
+.swing {
+  @include animation(swing ease-in-out 5s infinite alternate);
+}
+
+@keyframes swing {
+    0% { transform: rotate(3deg); }
+    100% { transform: rotate(-3deg); }
+}
+
 .ornaments {
   position: absolute;
   top: 0;
@@ -29,7 +38,8 @@
      transform: translate(0, -100%);
 
      &:nth-child(1){
-         left: 10%;
+         left: 3%;
+         top: -1em;
          background: transparent;
        @include animation(from-top 2s 0s ease-out forwards);
      }
@@ -49,6 +59,7 @@
 
      &:nth-child(4){
        left: 40%;
+       top: -1em;
        background: transparent;
        @include animation(from-top 2s 1.5s ease-out forwards);
      }
@@ -134,7 +145,7 @@ h2 {
     .copyblock {
       font-family: 'Source Sans Pro', sans-serif;
       text-align: center;
-          padding: 0px 75px 0px 75px;
+          padding: 0px 75px 0px 130px;
           color: #5D5D5D;
           font-size: 30px;
     }
@@ -186,8 +197,41 @@ h2 {
 	}
 }
 
+  width: 1.5px;
+  position: relative;
+  background-color: #f99d24;
+  height: 200px;
+  left: 80px;
+  top: 12.4px;
+  margin-top: -20px;
 
 
+}
+
+
+
+.button {
+  height: 22px;
+  width: 30px;
+  background-color: #f99d24;
+  position: relative;
+  left: 65px;
+  top: 7px;
+  border-radius: 4px;
+
+
+}
+
+
+.red-ball {
+  background-color: #6b2f36;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  position: relative;
+  left: 3px;
+
+  }
 .footer-header {
   h2 {
   padding:0px;
