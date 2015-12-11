@@ -20,14 +20,7 @@ var holiday = (function(){
 				$(this).addClass('active');
 
 				if(Modernizr.touch){
-					$('.hero img').removeClass('active');
-					$('.hero img').eq($(this).index() + 1).addClass('active');
 
-					$('.hero .ribbon').text($(this).data('title'));
-
-					$('html, body').animate({
-					      scrollTop: $('.hero').offset().top
-					}, 200);
 				}
 
 			}, 'mouseout' : function(){

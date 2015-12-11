@@ -7,7 +7,7 @@
 }
 
 .cbp-rfgrid li {
-  height:250px;
+  height:auto;
 	position: relative;
 	float: left;
 	overflow: hidden;
@@ -15,7 +15,7 @@
 	width: -webkit-calc(100% / 6);
 	width: calc(100% / 6);
   img {
-    height:250px;
+    height:auto;
     width:250px;
   }
 }
@@ -55,67 +55,67 @@
 /* Example for media query: change number of items per row */
 @media screen and (max-width: 1300px) {
 	.cbp-rfgrid li {
-    height:250px;
+    height:auto;
 		width: 20%; /* Fallback */
 		width: -webkit-calc(100% / 6);
 		width: calc(100% / 5);
     img {
-      height:250px;
+      height:auto;
     }
 	}
 }
 @media screen and (max-width: 1250px) {
 	.cbp-rfgrid li {
-    height:250px;
+    height:auto;
 		width: 20%; /* Fallback */
 		width: -webkit-calc(100% / 6);
 		width: calc(100% / 5);
     img {
-      height:250px;
+      height:auto;
     }
 	}
 }
 @media screen and (max-width: 1200px) {
 	.cbp-rfgrid li {
-    height:250px;
+    height:auto;
 		width: 20%; /* Fallback */
 		width: -webkit-calc(100% / 5);
 		width: calc(100% / 5);
     img {
-      height:250px;
+      height:auto;
     }
 	}
 }
 @media screen and (max-width: 1190px) {
 	.cbp-rfgrid li {
-    height:250px;
+    height:auto;
 		width: 20%; /* Fallback */
 		width: -webkit-calc(100% / 5);
 		width: calc(100% / 5);
     img {
-      height:250px;
+      height:auto;
     }
 	}
 }
 @media screen and (max-width: 1180px) {
 	.cbp-rfgrid li {
-    height:250px;
+    height:auto;
 		width: 20%; /* Fallback */
 		width: -webkit-calc(100% / 4);
 		width: calc(100% / 4);
     img {
-      height:250px;
+      height:auto;
     }
 	}
 }
 @media screen and (max-width: 1050px) {
 	.cbp-rfgrid li {
-    height:250px;
+    height:auto;
 		width: 20%; /* Fallback */
 		width: -webkit-calc(100% / 4);
 		width: calc(100% / 4 );
     img {
-      height:250px;
+      height:auto;
     }
 	}
 }
@@ -123,7 +123,7 @@
 
 @media screen and (max-width: 945px) {
 	.cbp-rfgrid li {
-    height:250px;
+    height:auto;
 		width: 25%; /* Fallback */
 		width: -webkit-calc(100% / 3);
 		width: calc(100% / 3);
@@ -131,7 +131,7 @@
 }
 @media screen and (max-width: 850px) {
 	.cbp-rfgrid li {
-    height:250px;
+    height:auto;
 		width: 33.3333333%; /* Fallback */
 		width: -webkit-calc(100% / 3);
 		width: calc(100% / 3);
@@ -139,7 +139,7 @@
 }
 @media screen and (max-width: 660px) {
 	.cbp-rfgrid li {
-    height:250px;
+    height:auto;
 		width: 33.3333333%; /* Fallback */
 		width: -webkit-calc(100% / 3);
 		width: calc(100% / 3);
@@ -160,10 +160,14 @@
 }
 @media screen and (max-width: 400px) {
 	.cbp-rfgrid li {
-		height: 250px;
+		//height: 150px;
+		//min-width: 300px;
 		width: 50%; /* Fallback */
-		width: -webkit-calc(100% / 2);
-		width: calc(100% / 2);
+		width: -webkit-calc(100% / 1);
+		width: calc(100% / 1);
+	}
+	img {
+		width: 100% !important;
 	}
 }
 
