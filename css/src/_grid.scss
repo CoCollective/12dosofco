@@ -176,8 +176,8 @@
 @media screen and (max-width: 560px) {
 	.cbp-rfgrid li {
 		width: 50%; /* Fallback */
-		width: -webkit-calc(100% / 1);
-		width: calc(100% / 1);
+		width: -webkit-calc(100% / 2);
+		width: calc(100% / 2);
 		}
 		.ornaments {
 			width:100%;
