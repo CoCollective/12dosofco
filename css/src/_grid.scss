@@ -226,6 +226,20 @@
 		}
 	}
 }
+@media screen and (max-width: 450px) {
+.footer-grid {
+	width: 100% !important;
+	.left {
+		width: 31%;
+	}
+	.center {
+		width: 31%;
+	}
+	.right {
+		width: 31%;
+	}
+}
+}
 
 @media screen and (max-width: 350px) {
 	.ornaments {
