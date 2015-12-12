@@ -233,6 +233,18 @@ h2 {
 		}
 	}
 }
+.section-3 {
+  margin-top:60px;
+  margin-bottom:60px;
+  a {
+      color:#ff9c9c;
+      font-size: 20px;
+      &:hover {
+        color:#23BCC1;
+      }
+  }
+}
+
 .footer-grid{height:50px;padding:20px 0;display:inline-block;width: 55%;}
 footer {
   padding: 0 0 50px 0;
