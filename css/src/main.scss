@@ -108,7 +108,7 @@
      }
    }
 }
-#snow{
+#snow {
 	background: none;
 	font-family: Androgyne;
 	background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'),
@@ -178,9 +178,13 @@ h2 {
           margin: auto;
           color: #5D5D5D;
           font-size: 22px;
-              width: 45%;
+              width: 700px;
               p {
                 margin: -10px 0;
+              }
+              a {
+                color: #23BCC1;
+                &:hover {color:#ff9c9c;}
               }
             }
         .overlay {
