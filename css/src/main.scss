@@ -24,7 +24,7 @@
 
 .ornaments {
   position: absolute;
-  top: 0;
+  top: 15px;
   width: 100%;
    div {
      position: absolute;
@@ -33,69 +33,93 @@
      transform: translate(0, -100%);
 
      &:nth-child(1){
+        width: 80px;
          left: 27%;
-         top: -1em;
+         top: -3em;
          background: transparent;
        @include animation(from-top 2s 0s ease-out forwards);
+       img {
+         width: 80px;
+       }
      }
 
      &:nth-child(2){
+       width: 100px;
        left: 33%;
+       top: -2em;
        background: transparent;
         @include animation(from-top 2s .5s ease-out forwards);
+        img {
+          width: 100px;
+        }
      }
 
      &:nth-child(3){
+       width: 80px;
        left: 39%;
-       top: -5em;
+       top: -4em;
        background: transparent;
        @include animation(from-top 2s 1s ease-out forwards);
+       img {
+         width: 80px;
+       }
      }
 
      &:nth-child(4){
+       width: 120px;
        left: 43%;
+       top: -2em;
        background: transparent;
        @include animation(from-top 2s 1.5s ease-out forwards);
        img {
-         height: 400px;
+         width: 120px;
        }
      }
 
      &:nth-child(5){
+       width: 80px;
        left: 53%;
-       top: -1em;
-       background: transparent;
-       @include animation(from-top 2s 1.5s ease-out forwards);
-     }
-     &:nth-child(6){
-       left: 60%;
+       top: -5em;
        background: transparent;
        @include animation(from-top 2s 1.5s ease-out forwards);
        img {
-         height: 350px;
+         width: 80px;
+       }
+     }
+     &:nth-child(6){
+       width: 90px;
+       left: 57%;
+       top: -2em;
+       background: transparent;
+       @include animation(from-top 2s 1.5s ease-out forwards);
+       img {
+         width: 90px;
        }
      }
      &:nth-child(7){
-       left: 69%;
+       width: 70px;
+       left: 66%;
        top: -4em;
        background: transparent;
        @include animation(from-top 2s 1.5s ease-out forwards);
      }
      img {
-       height: 300px;
+       width: 70px;
      }
    }
 }
 #snow{
 	background: none;
 	font-family: Androgyne;
-	background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'), url('http://www.wearewebstars.dk/codepen/img//s2.png'), url('http://www.wearewebstars.dk/codepen/img//s3.png');
-	height: 65%;
+	background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'),
+  url('http://www.wearewebstars.dk/codepen/img//s2.png'),
+  url('http://www.wearewebstars.dk/codepen/img//s3.png');
+	height: 75%;
 	left: 0;
 	position: absolute;
 	top: 0;
 	width: 100%;
-	z-index:1;
+	z-index: 6;
 	-webkit-animation: snow 10s linear infinite;
 	-moz-animation: snow 10s linear infinite;
 	-ms-animation: snow 10s linear infinite;
@@ -137,7 +161,7 @@ h2 {
 }
 
 .gift-wrapper {
-  margin: 18em auto;
+  margin: 10em auto;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 23px;
   -moz-osx-font-smoothing: grayscale;
@@ -145,7 +169,7 @@ h2 {
 
 
 	.hero {
-		width: 80%;
+    padding: 50px 0px;
 		position: relative;
     margin: 0 auto;
     .copyblock {
@@ -155,8 +179,10 @@ h2 {
           color: #5D5D5D;
           font-size: 22px;
               width: 70%;
-          .copyblack {color:black;}
-        }
+              p {
+                margin: -10px 0;
+              }
+            }
         .overlay {
   position: absolute;
   width: 100%;
@@ -171,7 +197,7 @@ h2 {
 			top: 0;
 			left: 0;
 			z-index: -1;
-         width: 80%;
+         width: 60%;
     margin: 0 auto;
 
 			&.active {

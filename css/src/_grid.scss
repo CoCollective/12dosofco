@@ -132,15 +132,15 @@
 		width: calc(100% / 3);
 	}
 .ornaments {
-   div {
-     &:nth-child(1){left: 28%!important;}
-     &:nth-child(2){left: 38%!important;}
-     &:nth-child(3){left: 48%!important;}
-     &:nth-child(4){left: 50%!important;}
-     &:nth-child(5){left: 64%!important;}
-     &:nth-child(6){left: 70%!important;}
-     &:nth-child(7){left: 80%!important;}
-   }
+  // div {
+  //   &:nth-child(1){left: 28%!important;}
+  //   &:nth-child(2){left: 38%!important;}
+  //   &:nth-child(3){left: 48%!important;}
+  //   &:nth-child(4){left: 50%!important;}
+  //   &:nth-child(5){left: 64%!important;}
+  //   &:nth-child(6){left: 70%!important;}
+  //   &:nth-child(7){left: 80%!important;}
+  // }
 	}
 }
 @media screen and (max-width: 850px) {
@@ -159,42 +159,17 @@
 		width: calc(100% / 3);
 	}
 	.ornaments {
+		width: 92%!important;
 		 div {
-
-			 &:nth-child(1){
-					 display: none;
-			 }
-
-			 &:nth-child(2){
-				 left: 0% !important;
-						 top: -10em !important;
-					@include animation(from-top 2s .5s ease-out forwards);
-			 }
-
-			 &:nth-child(3){
-				 display: none;
-			 }
-
-			 &:nth-child(4){
-				 left: 20% !important;
-				 top: -1em !important;
-				 @include animation(from-top 2s 1.5s ease-out forwards);
-			 }
-
-			 &:nth-child(5){
-				 display: none;
-			 }
-			 &:nth-child(6){
-				 left: 61% !important;
-				 top: -12em !important;
-				 @include animation(from-top 2s 1.5s ease-out forwards);
-			 }
-			 &:nth-child(7){
-				display: none;
-			 }
+			 &:nth-child(1){display: none;}
+			 &:nth-child(2){}
+			 &:nth-child(3){display: none;}
+			 &:nth-child(4){top:-1em !important;}
+			 &:nth-child(5){display: none;}
+			 &:nth-child(6){left: 61% !important;}
+			 &:nth-child(7){display: none;}
 		 }
-	}
-
+		}
 }
 
 @media screen and (max-width: 560px) {
@@ -202,7 +177,19 @@
 		width: 50%; /* Fallback */
 		width: -webkit-calc(100% / 1);
 		width: calc(100% / 1);
-	}
+		}
+		.ornaments {
+			width:100%;
+		   div {
+		     &:nth-child(1){}
+		     &:nth-child(2){left:20%!important;}
+		     &:nth-child(3){}
+		     &:nth-child(4){left:38%!important;}
+		     &:nth-child(5){}
+		     &:nth-child(6){left:63%!important;}
+		     &:nth-child(7){}
+		   }
+			}
 
 	.gift-wrapper {
 		.hero {
@@ -239,8 +226,35 @@
 	}
 }
 
+@media screen and (max-width: 350px) {
+	.ornaments {
+		width:100%;
+		 div {
+			 &:nth-child(1){}
+			 &:nth-child(2){left:13%!important;}
+			 &:nth-child(3){}
+			 &:nth-child(4){left:35%!important;}
+			 &:nth-child(5){}
+			 &:nth-child(6){left:69%!important;}
+			 &:nth-child(7){}
+		 }
+		}
+}
+
 @media screen and (max-width: 300px) {
 	.cbp-rfgrid li {
 		width: 100%;
 	}
+	.ornaments {
+		width:100%;
+		 div {
+			 &:nth-child(1){}
+			 &:nth-child(2){left:1%!important;}
+			 &:nth-child(3){}
+			 &:nth-child(4){left:32%!important;top:-2em!important;}
+			 &:nth-child(5){}
+			 &:nth-child(6){left:75%!important;}
+			 &:nth-child(7){}
+		 }
+		}
 }
