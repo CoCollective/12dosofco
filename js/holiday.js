@@ -1,48 +1,51 @@
-var holiday = (function(){
-    var self;
+var holiday = (function() {
+  var self;
 
-    return {
+  return {
 
-        init: function(){
-            self    = this;
+    init: function() {
+      self = this;
 
-			self.items();
-			self.preload();
-        },
+      self.items();
+      self.preload();
+    },
 
-		items: function(){
-			$('.grid .item').on('click', function(){
+    items: function() {
+      $('.grid .item').on('click', function() {
         $(this).addClass('active');
 
-			});
+      });
 
-			$('.grid .item').on({'mouseover' : function(){
-				$(this).addClass('active');
+      $('.grid .item').on({
+        'mouseover': function() {
+          $(this).addClass('active');
 
-				if(Modernizr.touch){
+          if (Modernizr.touch) {
 
-				}
+          }
 
-			}, 'mouseout' : function(){
-				$(this).removeClass('active');
-			}})
-		},
+        },
+        'mouseout': function() {
+          $(this).removeClass('active');
+        }
+      })
+    },
 
-		preload: function(){
-			$('.hero img').first().load(function() {
-		        $('.hero .overlay').fadeOut();
-		    });
+    preload: function() {
+      $('.hero img').first().load(function() {
+        $('.hero .overlay').fadeOut();
+      });
 
-			var item
+      var item
 
-			$('img.lazy').each(function(i){
-				$(this).attr('src', $(this).data('src'));
-			});
-		}
-    };
-    
+      $('img.lazy').each(function(i) {
+        $(this).attr('src', $(this).data('src'));
+      });
+    }
+  };
+
 })();
 
-$(document).ready(function(){
-    holiday.init();
+$(document).ready(function() {
+  holiday.init();
 });
