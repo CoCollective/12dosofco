@@ -271,15 +271,15 @@ footer {
       height:25px;
     }
   }
-  a {
-    &:hover {
-      padding-top: 15px;
-      padding-bottom: 3px;
-      padding-right: 10px;
-      padding-left: 10px;
-      -webkit-box-shadow: 0 0 15px #777;
-	   -moz-box-shadow: 0 0 15px #777;
-          box-shadow: 0 0 15px #777;
-    }
-  }
+  //a {
+  //  &:hover {
+  //    padding-top: 15px;
+  //    padding-bottom: 3px;
+  //    padding-right: 10px;
+  //    padding-left: 10px;
+  //    -webkit-box-shadow: 0 0 15px #777;
+	//   -moz-box-shadow: 0 0 15px #777;
+  //        box-shadow: 0 0 15px #777;
+  //  }
+  //}
 }
