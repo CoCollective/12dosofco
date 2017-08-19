@@ -1,15 +1,13 @@
 "use strict";
 
-
-
-var gulp = require("gulp");
-var gulpUtil = require("gulp-util");
-var concat = require("gulp-concat");
-var uglify = require("gulp-uglify");
-var sass = require("gulp-sass");
-var minifyCSS = require("gulp-minify-css");
-var server = require("gulp-develop-server");
-var autoPrefixer = require('gulp-autoprefixer');
+const gulp = require("gulp");
+const gulpUtil = require("gulp-util");
+const concat = require("gulp-concat");
+const uglify = require("gulp-uglify");
+const sass = require("gulp-sass");
+const minifyCSS = require("gulp-minify-css");
+const server = require("gulp-develop-server");
+const autoPrefixer = require('gulp-autoprefixer');
 
 
 gulp.task("default", function () {
@@ -18,19 +16,19 @@ gulp.task("default", function () {
 
 
 gulp.task("watch", function () {
-	gulp.watch("css/src/*.scss", ["styles"]);
-	//gulp.watch("js/*.js", ["scripts"]);
+	gulp.watch("src/css/*.scss", ["styles"]);
+	gulp.watch("src/js/*.js", ["scripts"]);
 });
 
 
 gulp.task("styles", function () {
-	gulp.src("css/src/*.scss")
+	gulp.src("src/css/main.scss")
 		.pipe(sass())
 		.pipe(autoPrefixer({
             browsers: ['last 2 versions'],
             cascade: false
         }))
-		.pipe(concat("main.min.css"))
+		.pipe(concat("../dist/main.min.css"))
 		.pipe(minifyCSS())
 		.pipe(gulp.dest("css"));
 });
@@ -38,14 +36,11 @@ gulp.task("styles", function () {
 
 gulp.task("scripts", function () {
 	gulp.src([
-		"js/vendor/jquery/jquery.min.js",
-		"js/vendor/greensock/TweenMax.min.js",
-		"js/vendor/greensock/plugins/ScrollToPlugin.min.js",
-		"js/vendor/greensock/plugins/KineticPlugin.min.js",
-		"js/vendor/greensock/utils/Draggable.min.js",
-		"js/main.js"
+		"src/js/jquery.min.js",
+		"src/js/holiday.js",
+		"src/js/modernizr.js"
 	])
-		.pipe(concat("main.min.js"))
+		.pipe(concat("../dist/main.min.js"))
 		.pipe(uglify({
 			mangle: false
 		}))

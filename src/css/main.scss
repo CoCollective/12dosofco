@@ -1,0 +1,346 @@
+@import 'normalize';
+@import 'typography';
+@import 'mixins';
+@import 'grid';
+
+* {
+  box-sizing: border-box;
+  -webkit-text-size-adjust: none;
+  outline: none;
+
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-touch-callout: none;
+  -webkit-highlight: none;
+}
+section {
+  display: table;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  font-family: majesti_bannermedium_italic;
+  font-size: 36px;
+  font-style: italic;
+  color: #23bcc1;
+  text-align: center;
+  background-color: #fff;
+  img {
+    width: 100px;
+  }
+}
+.footer-header {
+  padding-top: 50px;
+  img {
+    width: 50%;
+  }
+}
+
+@include keyframes(from-top) {
+  0% {
+    transform: translate(0, -100%);
+  }
+
+  100% {
+    transform: translate(0, 0%);
+  }
+}
+
+.staff {
+  margin: 0 auto;
+}
+@keyframes swing {
+  0% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
+}
+
+.ornaments {
+  position: absolute;
+  top: 15px;
+  width: 100%;
+  div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0, -100%);
+
+    &:nth-child(1) {
+      top: -3em;
+      left: 27%;
+      width: 80px;
+      background: transparent;
+
+      @include animation(from-top 2s 0s ease-out forwards);
+      img {
+        width: 80px;
+      }
+    }
+
+    &:nth-child(2) {
+      top: -2em;
+      left: 33%;
+      width: 100px;
+      background: transparent;
+
+      @include animation(from-top 2s .5s ease-out forwards);
+      img {
+        width: 100px;
+      }
+    }
+
+    &:nth-child(3) {
+      top: -4em;
+      left: 39%;
+      width: 80px;
+      background: transparent;
+
+      @include animation(from-top 2s 1s ease-out forwards);
+      img {
+        width: 80px;
+      }
+    }
+
+    &:nth-child(4) {
+      top: -2em;
+      left: 43%;
+      width: 120px;
+      background: transparent;
+
+      @include animation(from-top 2s 1.5s ease-out forwards);
+      img {
+        width: 120px;
+      }
+    }
+
+    &:nth-child(5) {
+      top: -5em;
+      left: 53%;
+      width: 80px;
+      background: transparent;
+
+      @include animation(from-top 2s 1.5s ease-out forwards);
+      img {
+        width: 80px;
+      }
+    }
+    &:nth-child(6) {
+      top: -2em;
+      left: 57%;
+      width: 90px;
+      background: transparent;
+
+      @include animation(from-top 2s 1.5s ease-out forwards);
+      img {
+        width: 90px;
+      }
+    }
+    &:nth-child(7) {
+      top: -4em;
+      left: 66%;
+      width: 70px;
+      background: transparent;
+
+      @include animation(from-top 2s 1.5s ease-out forwards);
+    }
+    img {
+      width: 70px;
+    }
+  }
+}
+#snow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 6;
+  width: 100%;
+  height: 510px;
+  font-family: Androgyne;
+  background: none;
+  background-image: url('../img/s1.png'),
+  url('../img/s2.png'),
+  url('../img/s3.png');
+  -webkit-animation: snow 10s linear infinite;
+     -moz-animation: snow 10s linear infinite;
+      -ms-animation: snow 10s linear infinite;
+          animation: snow 10s linear infinite;
+}
+@keyframes snow {
+  0% {
+    background-position: 0 0, 0 0, 0 0;
+  }
+  50% {
+    background-position: 500px 500px, 100px 200px, -100px 150px;
+  }
+  100% {
+    background-position: 500px 1000px, 200px 400px, -100px 300px;
+  }
+}
+@-moz-keyframes snow {
+  0% {
+    background-position: 0 0, 0 0, 0 0;
+  }
+  50% {
+    background-position: 500px 500px, 100px 200px, -100px 150px;
+  }
+  100% {
+    background-position: 400px 1000px, 200px 400px, 100px 300px;
+  }
+}
+@-webkit-keyframes snow {
+  0% {
+    background-position: 0 0, 0 0, 0 0;
+  }
+  50% {
+    background-position: 500px 500px, 100px 200px, -100px 150px;
+  }
+  100% {
+    background-position: 500px 1000px, 200px 400px, -100px 300px;
+  }
+}
+@-ms-keyframes snow {
+  0% {
+    background-position: 0 0, 0 0, 0 0;
+  }
+  50% {
+    background-position: 500px 500px, 100px 200px, -100px 150px;
+  }
+  100% {
+    background-position: 500px 1000px, 200px 400px, -100px 300px;
+  }
+}
+
+
+
+
+
+h1, h2 {
+  font-family: 'majesti_bannermedium_italic';
+}
+
+h2 {
+  font-size: 60px;
+  color: white;
+  text-align: center;
+}
+
+.gift-wrapper {
+  margin: 10em auto;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 23px;
+
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+
+
+  .hero {
+    position: relative;
+    padding: 50px 0;
+    margin: 0 auto;
+    .copyblock {
+      width: 700px;
+      margin: auto;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 22px;
+      color: #5d5d5d;
+      text-align: center;
+      p {
+        margin: -10px 0;
+      }
+      a {
+        color: #23bcc1;
+        &:hover {
+          color: #ff9c9c;
+        }
+      }
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 3;
+      width: 100%;
+      height: 100%;
+    }
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      display: block;
+      width: 60%;
+      margin: 0 auto;
+
+      &.active {
+        position: relative;
+        z-index: 2;
+      }
+    }
+  }
+
+  .grid {
+    .item {
+      img {
+        &.anim {
+          display: none;
+        }
+      }
+      &.active {
+        img {
+          display: none;
+          &.anim {
+            display: block;
+          }
+        }
+      }
+    }
+    .clr {
+      clear: both;
+    }
+  }
+}
+.section-3 {
+  padding: 60px 40px;
+  a {
+    font-size: 20px;
+    color: #ff9c9c;
+    &:hover {
+      color: #23bcc1;
+    }
+  }
+}
+
+.footer-grid {
+  display: inline-block;
+  width: 55%;
+  height: 50px;
+  padding: 20px 0;
+}
+footer {
+  padding: 60px 40px;
+  color: white;
+  text-align: center;
+  background-color: #23bcc1;
+  .left {
+    float: left;
+    width: 33%;
+    img {
+      height: 25px;
+    }
+  }
+  .center {
+    float: left;
+    width: 33%;
+    img {
+      height: 25px;
+    }
+  }
+  .right {
+    float: left;
+    width: 33%;
+    img {
+      height: 25px;
+    }
+  }
+}
