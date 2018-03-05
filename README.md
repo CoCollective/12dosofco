@@ -6,8 +6,8 @@ The 2016 holiday website for Co: Collective
 git clone https://github.com/CoCollective/co-holiday.git
 
 # install deps
-yarn
+npm
 
 # build the styles, scripts and run the server
-yarn start:dev
+npm start:dev
 ```
