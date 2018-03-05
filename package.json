@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "author": "Tommy Dunn <tdunn@cocollective.com>",
   "scripts": {
-  "start": "node app.js",
-  "start:dev": "gulp scripts && gulp styles && gulp server:start"
-},
+    "start": "node app.js",
+    "start:dev": "gulp scripts && gulp styles && gulp server:start"
+  },
   "dependencies": {
     "express": "^4.10.2",
     "gulp": "^3.8.11",
